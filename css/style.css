@@ -1,0 +1,187 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+.clear-both{
+	clear: both;
+}
+/* MAIN HEADER */
+/* =========== */
+header#main-header nav ul li {
+    list-style-type: none;
+}
+
+header#main-header nav {
+    height: 50px;
+}
+
+header#main-header .home-image{
+	width:auto; height:50px;
+}
+
+/* MAIN FOOTER */
+/* =========== */
+footer#main-footer p {
+    text-align: center;
+}
+
+footer#main-footer .footer-links{
+    margin: 10px 0 0 3em;
+}
+
+footer#main-footer .footer-images{
+	height:25px; width:auto;
+}
+
+/* MAIN CONTENT */
+/* ============ */
+main#main-content form#main-form {
+    height: auto;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+main#main-content h1 {
+    margin-left: 1em;
+}
+
+main#main-content form#main-form div.form-group {
+    margin-top: 1em;
+    font: 1em sans-serif;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main#main-content form#main-form footer {
+    margin-top: 1em;
+}
+
+main#main-content form#main-form footer div {
+    margin-left: 10em;
+}
+
+main#main-content form#main-form section {
+    position: relative;
+    width: 60%;
+    margin-left: 5em;
+}
+
+main#main-content form#main-form .form-label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+main#main-content form#main-form .form-checkbox {
+    display: inline-block;
+    width: 100px;
+}
+
+main#main-content form#main-form section .first-image {
+    position: absolute;
+    top: -15px; left: 350px;
+    background-image: url("../images/firstImage.png");
+    background-size: 50px 50px;
+    height: 50px; width: 50px;
+}
+
+main#main-content form#main-form section .first-image:hover {
+    background-image: url("../images/secondImage.png");
+}
+
+main#main-content form#main-form section .second-image {
+    position: absolute;
+    top: 35px; left: 350px;
+    background-image: url("../images/secondImage.png");
+    background-size: 50px 50px;
+    height: 50px; width: 50px;
+}
+
+main#main-content form#main-form section .second-image:hover {
+    background-image: url("../images/firstImage.png");
+}
+main#main-content form#main-form section .cars-label{
+    height:55px;
+    width: 100px;
+    float: left;
+}
+main#main-content form#main-form section .cars-checkboxes{
+    width: 420px;
+    float: left;
+}
+
+/* FORM BUTTONS */
+/* ============ */
+.submit-button{
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 20px;
+	text-decoration:none;
+}
+.submit-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.submit-button:active {
+	position:relative;
+	top:1px;
+}
+.cancel-button{
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #DE1B1B), color-stop(1, #8B0000));
+	background:-moz-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+	background:-webkit-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+	background:-o-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+	background:-ms-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+	background:linear-gradient(to bottom, #DE1B1B 5%, #8B0000 100%);
+	background-color:#8B0000;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 20px;
+	text-decoration:none;
+}
+.cancel-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8B0000), color-stop(1, #DE1B1B));
+	background:-moz-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+	background:-webkit-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+	background:-o-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+	background:-ms-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+	background:linear-gradient(to bottom, #8B0000 5%, #DE1B1B 100%);
+	background-color:#8B0000;
+}
+.cancel-button:active {
+	position:relative;
+	top:1px;
+}

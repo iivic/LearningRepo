@@ -43,8 +43,9 @@ main#main-content form#main-form {
     border-radius: 1em;
 }
 
-main#main-content h1 {
+main#main-content header h1 {
     margin-left: 1em;
+    float: left;
 }
 
 main#main-content form#main-form div.form-group {
@@ -115,7 +116,7 @@ main#main-content form#main-form section .cars-checkboxes{
 
 /* FORM BUTTONS */
 /* ============ */
-.submit-button{
+.submit-button {
 	-moz-box-shadow: 0px 10px 14px -7px #276873;
 	-webkit-box-shadow: 0px 10px 14px -7px #276873;
 	box-shadow: 0px 10px 14px -7px #276873;
@@ -150,7 +151,7 @@ main#main-content form#main-form section .cars-checkboxes{
 	position:relative;
 	top:1px;
 }
-.cancel-button{
+.cancel-button {
 	-moz-box-shadow: 0px 10px 14px -7px #276873;
 	-webkit-box-shadow: 0px 10px 14px -7px #276873;
 	box-shadow: 0px 10px 14px -7px #276873;
@@ -184,4 +185,23 @@ main#main-content form#main-form section .cars-checkboxes{
 .cancel-button:active {
 	position:relative;
 	top:1px;
+}
+
+/* TIME CONTENT */
+/* ============ */
+#time-content {
+	float: right;
+    border: 5px #7FDBFF groove;
+    padding: 0 5px;
+    width: 85px;
+}
+#time-of-day {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#timezone {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: center;
 }

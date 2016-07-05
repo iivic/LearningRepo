@@ -228,31 +228,36 @@ main#main-content form#main-form section .cars-checkboxes{
 
 #mapCampus {
 	width: 50%;
-	height: 418px;
-	margin: 75px 0 0;
+	height: 455px;
+	margin: 90px 0 0;
 	float: left;
 }
 
 .faculty-img {
 	width: 100px;
 	height: 100px;
-	float: left;
 }
 
 .faculty-info {
-	float: left;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 .faculty-info:hover {
-	font-size: 120%;
+	font-weight: bold;
 	cursor: pointer;
 }
 
 .faculty-content {
-	padding: 5px 0;
+	margin: 10px 0;
+	display: inline-flex;
+	box-shadow: 10px 10px 5px #888888;
+	width: 90%;
 }
 
 .clearfix {
 	clear: both;
+}
+
+#content {
+	margin-bottom: 10px;
 }

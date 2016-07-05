@@ -9,7 +9,7 @@ $.ajax({
             var loc = window.location.pathname,
                 dir = loc.substring(0, loc.lastIndexOf('/'));
             $('#faculties').append('' +
-                '<div class="faculty-content clearfix">' +
+                '<div class="faculty-content">' +
                     '<img class="faculty-img" src="'+ dir + value.img +'">' +
                     '<div class="faculty-info">' +
                         '<p class="faculty-name">' + value.name + '</p>' +

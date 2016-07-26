@@ -1,9 +1,7 @@
 /**
  * Created by ivanivic on 09/05/16.
  */
-// GOOGLE MAPS
-var mapLocation, mapPath, mapLocationMarker,
-    manasPosition = {lat: 43.5244521, lng: 16.4736719};
+google.maps.event.addDomListener(window, 'load', initialize);
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     directionsService.route({
@@ -20,11 +18,13 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 
 }
 
-function initMap() {
+function initialize() {
     var directionsService = new google.maps.DirectionsService,
-        directionsDisplay = new google.maps.DirectionsRenderer;
+        directionsDisplay = new google.maps.DirectionsRenderer,
+        mapLocation, mapPath, mapLocationMarker;
 
-    mapLocation = new google.maps.Map(document.getElementById('mapLocation'), {
+    manasPosition = new google.maps.LatLng(43.5244521, 16.4736719);
+    mapLocation = new google.maps.Map($('#mapLocation')[0], {
         center: manasPosition,
         scrollwheel: false,
         zoom: 15
@@ -37,8 +37,7 @@ function initMap() {
         title: 'Manas'
     });
 
-    mapPath = new google.maps.Map(document.getElementById('mapPath'), {
-        center: mapLocation,
+    mapPath = new google.maps.Map($('#mapPath')[0], {
         scrollwheel: false,
         zoom: 15
     });

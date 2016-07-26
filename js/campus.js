@@ -8,7 +8,7 @@ $.ajax({
         $.each(jsonData, function(index, value){
             var loc = window.location.pathname,
                 dir = loc.substring(0, loc.lastIndexOf('/'));
-            $('#faculties').append('' +
+            $('.faculties').append('' +
                 '<div class="faculty-content">' +
                     '<img class="faculty-img" src="'+ dir + value.img +'">' +
                     '<div class="faculty-info">' +
@@ -25,11 +25,13 @@ $.ajax({
     }
 });
 
-function initMap() {
-    var splitPos = {lat: 43.5244521, lng: 16.4736719};
+google.maps.event.addDomListener(window, 'load', initialize);
+
+function initialize() {
+    var splitPos = new google.maps.LatLng(43.5244521, 16.4736719);
 
     // Create a map object and specify the DOM element for display.
-    new google.maps.Map(document.getElementById('mapCampus'), {
+    new google.maps.Map($('#mapCampus')[0], {
         center: splitPos,
         scrollwheel: false,
         zoom: 12
@@ -43,12 +45,12 @@ $(function() {
         lat = $(this).children('div').attr('data-lat');
         location = {lat: parseFloat(lat), lng: parseFloat(lng)};
 
-        map = new google.maps.Map(document.getElementById('mapCampus'), {
+        map = new google.maps.Map($('#mapCampus')[0], {
             center: location,
             zoom: 14
         });
 
-        mapLocationMarker = new google.maps.Marker({
+        new google.maps.Marker({
             map: map,
             position: location
         });

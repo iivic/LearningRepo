@@ -6,7 +6,7 @@
       "lat": 43.509925,
       "lng": 16.467880599999944
     },
-    "img": "/images/faculties/fesb_img.jpg"
+    "img": "./images/faculties/fesb_img.jpg"
   },
   {
     "name": "EFST",
@@ -15,7 +15,7 @@
       "lat": 43.5116494,
       "lng": 16.466764399999988
     },
-    "img": "/images/faculties/efst_img.jpg"
+    "img": "./images/faculties/efst_img.jpg"
   },
   {
     "name": "PMFST",
@@ -24,7 +24,7 @@
       "lat": 43.509925,
       "lng": 16.467880599999944
     },
-    "img": "/images/faculties/pmfst_img.jpg"
+    "img": "./images/faculties/pmfst_img.jpg"
   },
   {
     "name": "KIFST",
@@ -33,6 +33,6 @@
       "lat": 43.5148248,
       "lng": 16.434086200000024
     },
-    "img": "/images/faculties/kif_img.jpg"
+    "img": "./images/faculties/kif_img.jpg"
   }
 ]

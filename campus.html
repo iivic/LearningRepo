@@ -7,6 +7,18 @@
 </head>
 <body>
 
+<!-- Create underscore template -->
+<script type="text/template" id="facultiesTemplate">
+    <div class="faculty-content">
+        <img class="faculty-img" src="<%= img %> ">
+        <div class="faculty-info">
+            <p class="faculty-name"><%= name %></p>
+            <p class="faculty-address"><%= address %></p>
+            <div data-lng="<%= location.lng %>" data-lat="<%= location.lat %>"></div>
+        </div>
+    </div>
+</script>
+
 <header class="main-header">
     <nav class="set-height-50px">
         <ul>
@@ -48,8 +60,11 @@
 ========== Javascript files =============
 -->
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+<script src="js/settings.js"></script>
+<script src="js/googleApiTier.js"></script>
+<script src="js/main.js"></script>
 <script src="js/campus.js"></script>
 <!--
 ========== End javascript files =============

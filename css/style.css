@@ -1,263 +1,262 @@
 body {
-    width: 80%;
     margin: auto;
+    width: 80%;
+}
+
+.set-height-50px {
+    height: 50px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
 }
 
 /* MAIN HEADER */
 /* =========== */
-header#main-header nav ul li {
+.main-header nav ul li {
     list-style-type: none;
 }
 
-header#main-header nav {
-    height: 50px;
-}
-
-header#main-header .home-image{
-	width:auto; height:50px;
+.home-image {
+    width: auto;
 }
 
 /* MAIN FOOTER */
 /* =========== */
-footer#main-footer p {
+.main-footer p {
     text-align: center;
 }
 
-footer#main-footer .footer-links{
-    margin: 10px 0 0 3em;
+.footer-links {
+    margin: 10px 0 0 45px;
 }
 
-footer#main-footer .footer-images{
-	height:25px; width:auto;
+.footer-images {
+    width: auto;
+    height: 25px;
 }
 
 /* MAIN CONTENT */
 /* ============ */
-main#main-content form#main-form {
+.main-form {
+    padding: 15px;
     height: auto;
-    padding: 1em;
 }
 
-main#main-content header h1 {
-    margin-left: 1em;
-    float: left;
+.main-content header h1 {
+    margin-left: 15px;
 }
 
-main#main-content form#main-form div.form-group {
-    margin-top: 1em;
-    font: 1em sans-serif;
-
+.main-form .form-group {
+    margin-top: 15px;
+    font: 15px sans-serif;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-main#main-content form#main-form footer {
-    margin-top: 1em;
+.main-form footer {
+    margin-top: 15px;
 }
 
-main#main-content form#main-form footer div {
-    margin-left: 10em;
+.main-form footer div {
+    margin-left: 150px;
 }
 
-main#main-content form#main-form section {
+.main-form section {
     position: relative;
+    margin-left: 75px;
     width: 60%;
-    margin-left: 5em;
 }
 
-main#main-content form#main-form .form-label {
+.main-form .form-label {
+    display: inline-block;
     width: 100px;
     text-align: right;
-    display: inline-block;
 }
 
-main#main-content form#main-form .form-checkbox {
+.main-form .form-checkbox {
     display: inline-block;
     width: 100px;
 }
 
-main#main-content form#main-form section .first-image {
+.form-image {
     position: absolute;
-    top: -15px; left: 350px;
-    background-image: url("../images/firstImage.png");
     background-size: 50px 50px;
-    height: 50px; width: 50px;
+    width: 50px;
+    height: 50px;
 }
 
-main#main-content form#main-form section .first-image:hover {
+.main-form .first-image {
+    top: -15px;
+    left: 350px;
+    background-image: url("../images/firstImage.png");
+}
+
+.main-form .first-image:hover {
     background-image: url("../images/secondImage.png");
 }
 
-main#main-content form#main-form section .second-image {
-    position: absolute;
-    top: 35px; left: 350px;
+.main-form .second-image {
+    top: 35px;
+    left: 350px;
     background-image: url("../images/secondImage.png");
-    background-size: 50px 50px;
-    height: 50px; width: 50px;
 }
 
-main#main-content form#main-form section .second-image:hover {
+.main-form .second-image:hover {
     background-image: url("../images/firstImage.png");
 }
-main#main-content form#main-form section .cars-label{
-    height:55px;
+
+.main-form .cars-label {
     width: 100px;
-    float: left;
+    height: 55px;
 }
-main#main-content form#main-form section .cars-checkboxes{
+
+.main-form .cars-checkboxes {
     width: 420px;
-    float: left;
 }
 
 /* FORM BUTTONS */
 /* ============ */
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 10px 14px -7px #276873;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-box-shadow: 0 10px 14px -7px #276873;
+    -webkit-box-shadow: 0 10px 14px -7px #276873;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
 .submit-button {
-	-moz-box-shadow: 0px 10px 14px -7px #276873;
-	-webkit-box-shadow: 0px 10px 14px -7px #276873;
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
-	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
-	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
-	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
-	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:14px;
-	font-weight:bold;
-	padding:8px 20px;
-	text-decoration:none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+    background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
 }
+
 .submit-button:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
-	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
-	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
-	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
-	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+    background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+    background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color: #408c99;
 }
-.submit-button:active {
-	position:relative;
-	top:1px;
-}
+
 .cancel-button {
-	-moz-box-shadow: 0px 10px 14px -7px #276873;
-	-webkit-box-shadow: 0px 10px 14px -7px #276873;
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #DE1B1B), color-stop(1, #8B0000));
-	background:-moz-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
-	background:-webkit-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
-	background:-o-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
-	background:-ms-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
-	background:linear-gradient(to bottom, #DE1B1B 5%, #8B0000 100%);
-	background-color:#8B0000;
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:14px;
-	font-weight:bold;
-	padding:8px 20px;
-	text-decoration:none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #DE1B1B), color-stop(1, #8B0000));
+    background: -moz-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+    background: -webkit-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+    background: -o-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+    background: -ms-linear-gradient(top, #DE1B1B 5%, #8B0000 100%);
+    background: linear-gradient(to bottom, #DE1B1B 5%, #8B0000 100%);
+    background-color: #8B0000;
 }
+
 .cancel-button:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8B0000), color-stop(1, #DE1B1B));
-	background:-moz-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
-	background:-webkit-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
-	background:-o-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
-	background:-ms-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
-	background:linear-gradient(to bottom, #8B0000 5%, #DE1B1B 100%);
-	background-color:#8B0000;
-}
-.cancel-button:active {
-	position:relative;
-	top:1px;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8B0000), color-stop(1, #DE1B1B));
+    background:-moz-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+    background:-webkit-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+    background:-o-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+    background:-ms-linear-gradient(top, #8B0000 5%, #DE1B1B 100%);
+    background:linear-gradient(to bottom, #8B0000 5%, #DE1B1B 100%);
+    background-color:#8B0000;
 }
 
 .index-link-image {
-	width: 100px;
-	height: 100px;
-	padding: 15px;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
 }
 
 .index-maps {
-	width: 40%;
-	float: right;
+    width: 40%;
 }
 
-#mapLocation, #mapPath {
-	height: 250px; width: 500px;
-	border: 2px solid silver;
-	margin: 10px 0;
+.map-location, .map-path {
+    margin: 10px 0;
+    border: 2px solid silver;
+    width: 500px;
+    height: 250px;
 }
 
 /* TIME CONTENT */
 /* ============ */
-#time-content {
-	float: right;
+.time-content {
     border: 5px #7FDBFF groove;
     padding: 0 5px;
     width: 85px;
 }
-#time-of-day {
-    font-size: 18px;
+
+.time-of-day {
     margin-bottom: 5px;
+    font-size: 18px;
     text-align: center;
 }
-#timezone {
-    font-size: 10px;
+
+.timezone {
     margin-top: 5px;
+    font-size: 10px;
     text-align: center;
 }
 
 /* CAMPUS ELEMENTS */
 /* =============== */
-#faculties {
-	width: 45%;
-	padding: 5px 10px;
-	float: left;
+.faculties {
+    padding: 5px 10px;
+    width: 45%;
 }
 
-#mapCampus {
-	width: 50%;
-	height: 455px;
-	margin: 90px 0 0;
-	float: left;
+.map-campus {
+    margin: 90px 0 0;
+    width: 50%;
+    height: 455px;
 }
 
 .faculty-img {
-	width: 100px;
-	height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 .faculty-info {
-	padding: 0 10px;
+    padding: 0 10px;
 }
 
 .faculty-info:hover {
-	font-weight: bold;
-	cursor: pointer;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .faculty-content {
-	margin: 10px 0;
-	display: inline-flex;
-	box-shadow: 10px 10px 5px #888888;
-	width: 90%;
+    display: inline-flex;
+    margin: 10px 0;
+    width: 90%;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .clearfix {
-	clear: both;
+    clear: both;
 }
 
-#content {
-	margin-bottom: 10px;
+.content {
+    margin-bottom: 10px;
 }

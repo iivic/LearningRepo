@@ -7,23 +7,22 @@
 </head>
 <body>
 
-<header id="main-header">
-    <nav>
+<header class="main-header">
+    <nav class="set-height-50px">
         <ul>
-            <li><a href="index.html"><img src="images/home.jpg" alt="Home Image" class="home-image"/></a>
+            <li><a href="index.html"><img src="images/home.jpg" alt="Home Image" class="home-image set-height-50px"/></a>
             </li>
         </ul>
     </nav>
 </header>
 
-<main id="main-content">
+<main class="main-content">
     <header>
         <hr>
-        <h1>Home</h1>
-        <time id="time-content">
-            <p id="time-of-day"></p>
-
-            <p id="timezone"></p>
+        <h1 class="pull-left">Home</h1>
+        <time class="time-content pull-right">
+            <p id="timeOfday" class="time-of-day"></p>
+            <p id="timezone" class="timezone"></p>
         </time>
         <hr class="clearfix">
     </header>
@@ -31,15 +30,15 @@
         <a href="form.html"><img src="images/form.jpg" alt="Form Image" class="index-link-image"/></a>
         <a href="campus.html"><img src="images/maps.png" alt="Maps Image" class="index-link-image"/></a>
 
-        <article class="index-maps">
-            <div id="mapLocation"></div>
-            <div id="mapPath"></div>
+        <article class="index-maps pull-right">
+            <div id="mapLocation" class="map-location"></div>
+            <div id="mapPath" class="map-path"></div>
         </article>
     </section>
     <hr class="clearfix">
 </main>
 
-<footer id="main-footer">
+<footer class="main-footer">
     <div class="footer-links">
         <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.jpg" class="footer-images"/></a>
         <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.jpg" class="footer-images"/></a>
@@ -53,8 +52,7 @@
 -->
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="js/main.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI3FxNgeGztxxvOHL4xbzNaAkOc56kYkI&callback=initMap"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 <script src="js/homePageMaps.js"></script>
 <!--
 ========== End javascript files =============

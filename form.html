@@ -7,23 +7,23 @@
 </head>
 <body>
 
-<header id="main-header">
-    <nav>
+<header class="main-header">
+    <nav class="set-height-50px">
         <ul>
-            <li><a href="index.html"><img src="images/home.jpg" alt="Home Image" class="home-image" /></a>
+            <li><a href="index.html"><img src="images/home.jpg" alt="Home Image" class="home-image set-height-50px" /></a>
             </li>
         </ul>
     </nav>
 </header>
 
-<main id="main-content">
-    <form id="main-form">
+<main class="main-content">
+    <form class="main-form">
         <header>
             <hr>
-            <h1>Submit Form</h1>
-            <time id="time-content">
-                <p id="time-of-day"></p>
-                <p id="timezone"></p>
+            <h1 class="pull-left">Submit Form</h1>
+            <time class="time-content pull-right">
+                <p id="timeOfday" class="time-of-day"></p>
+                <p id="timezone" class="timezone"></p>
             </time>
             <hr class="clearfix">
         </header>
@@ -47,9 +47,9 @@
                 <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
                 <input type="radio" name="gender" id="other" value="other"> <label for="other">Other</label>
             </div>
-            <div class="cars-label form-group"><label class="form-label">Cars:</label></div>
+            <div class="cars-label form-group pull-left"><label class="form-label">Cars:</label></div>
 
-            <div class="cars-checkboxes form-group">
+            <div class="cars-checkboxes form-group pull-left">
                 <div class="form-checkbox"><input type="checkbox" id="audi" value="audi"> <label
                         for="audi">Audi</label>
                 </div>
@@ -72,20 +72,20 @@
                 <div class="form-checkbox"><input type="checkbox" id="tesla" value="tesla"> <label
                         for="tesla">Tesla</label></div>
             </div>
-            <div class="first-image"></div>
-            <div class="second-image"></div>
+            <div class="first-image form-image"></div>
+            <div class="second-image form-image"></div>
         </section>
         <hr class="clearfix">
         <footer>
             <div>
-                <button class="submit-button" type="submit">Submit</button>
-                <button class="cancel-button" type="reset">Cancel</button>
+                <button class="submit-button button" type="submit">Submit</button>
+                <button class="cancel-button button" type="reset">Cancel</button>
             </div>
         </footer>
     </form>
 </main>
 
-<footer id="main-footer">
+<footer class="main-footer">
     <div class="footer-links">
         <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.jpg" class="footer-images"/></a>
         <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.jpg" class="footer-images"/></a>
@@ -97,6 +97,7 @@
 <!--
 ========== Javascript files =============
 -->
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="js/main.js"></script>
 <!--
 ========== End javascript files =============
